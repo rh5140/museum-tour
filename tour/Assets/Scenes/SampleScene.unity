@@ -1735,8 +1735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286cb7327afd33d49b38075a6df7f588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  camera1: {fileID: 0}
-  camera2: {fileID: 0}
+  camera1: {fileID: 803892717}
+  camera2: {fileID: 1409953311}
 --- !u!65 &1569021972
 BoxCollider:
   m_ObjectHideFlags: 0
