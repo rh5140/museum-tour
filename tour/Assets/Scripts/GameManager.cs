@@ -3,7 +3,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] Player player;
+    public Player player;
+    public Inventory inventory;
 
     private void Awake()
     {
