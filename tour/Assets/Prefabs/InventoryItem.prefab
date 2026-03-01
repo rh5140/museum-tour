@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryEntry
   objectType: 0
+  displayImage: {fileID: 6966817579802486927}
 --- !u!114 &1193426534705232031
 MonoBehaviour:
   m_ObjectHideFlags: 0

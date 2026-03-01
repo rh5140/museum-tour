@@ -6,6 +6,8 @@ public class ZoomIn : Interactable
     [SerializeField] GameObject roomCamera;
     [SerializeField] GameObject objectCamera;
     [SerializeField] GameObject newInteractable;
+    public PickupObject puzzleSolution;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     bool isSwapping = false;
     bool isZoomed = false;
@@ -17,6 +19,12 @@ public class ZoomIn : Interactable
         ZoomCamera();
     }
 
+    public void SolvePuzzle()
+    {
+        // Temporary..
+        gameObject.SetActive(false);
+    }
+
     void ZoomCamera()
     {
         isSwapping = true;
@@ -24,6 +32,14 @@ public class ZoomIn : Interactable
         roomCamera.SetActive(isZoomed);
         objectCamera.SetActive(!isZoomed);
         isZoomed = !isZoomed;
+        if (isZoomed)
+        {
+            GameManager.instance.currentPuzzle = this;
+        }
+        else
+        {
+            GameManager.instance.currentPuzzle = null;
+        }
         StartCoroutine(WaitForTransition());
     }
     

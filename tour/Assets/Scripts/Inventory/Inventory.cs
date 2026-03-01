@@ -8,7 +8,6 @@ public class Inventory : MonoBehaviour
     public void AddToInventory(Sprite itemImage, PickupObject objectType)
     {
         GameObject newEntry = Instantiate(inventoryEntry, transform);
-        newEntry.GetComponent<Image>().sprite = itemImage;
-        newEntry.GetComponent<InventoryEntry>().objectType = objectType;
+        newEntry.GetComponent<InventoryEntry>().SetUpEntry(itemImage, objectType);
     }
 }
