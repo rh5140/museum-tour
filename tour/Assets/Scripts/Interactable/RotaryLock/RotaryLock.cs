@@ -25,12 +25,6 @@ public class RotaryLock : MonoBehaviour
         num3 = int.Parse(num3Display.text);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Rotate(int num, bool increasing)
     {
         int newValue;
