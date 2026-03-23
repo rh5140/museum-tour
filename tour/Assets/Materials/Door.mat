@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wall_2
+  m_Name: Door
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,11 +28,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 51580fdc4bf82b7419fa5ecbed65348c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0ce755400fe7ebc41aebd46639de4df3, type: 3}
         m_Scale: {x: 5, y: 5}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 0.02, y: 0.03}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 0aabe24871529dd4e870bec72098b908, type: 3}
+        m_Texture: {fileID: 2800000, guid: d6b03220c5e42ed4da6a0e4c9b0a460d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -52,11 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 51580fdc4bf82b7419fa5ecbed65348c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0ce755400fe7ebc41aebd46639de4df3, type: 3}
         m_Scale: {x: 5, y: 5}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 0.02, y: 0.03}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 72feadf96acfd8041a1a6ec43c08a768, type: 3}
+        m_Texture: {fileID: 2800000, guid: ad4148b70fa938043aae33a30b910719, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -90,7 +90,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BumpScale: 0.5
+    - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -108,7 +108,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.2
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -118,13 +118,13 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.40922037, g: 0.4476905, b: 0.7169812, a: 1}
-    - _Color: {r: 0.40922034, g: 0.4476905, b: 0.7169812, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &1268232943075196535
+--- !u!114 &8305611280635010027
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
