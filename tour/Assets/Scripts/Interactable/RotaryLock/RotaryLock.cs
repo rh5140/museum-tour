@@ -15,7 +15,7 @@ public class RotaryLock : MonoBehaviour
     int num2;
     int num3;
 
-    [SerializeField] GameObject reward;
+    [SerializeField] GameObject[] door;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -67,8 +67,16 @@ public class RotaryLock : MonoBehaviour
     {
         if (code1 == num1 && code2 == num2 && code3 == num3)
         {
-            reward.SetActive(true);
-            gameObject.SetActive(false);
+            Open();
         }
+    }
+
+    void Open()
+    {
+        foreach (GameObject part in door)
+        {
+            part.SetActive(false);
+        }
+        gameObject.SetActive(false);
     }
 }

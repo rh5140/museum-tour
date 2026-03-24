@@ -12,7 +12,7 @@ public class RotaryLockButton : Interactable
         if (isTurning) return;
         isTurning = true;
         rotaryLock.TryUnlock();
-        StartCoroutine(WaitForTransition()); // Buggy because of game object setting inactive
+        //StartCoroutine(WaitForTransition()); // Buggy because of game object setting inactive
     }
 
     IEnumerator WaitForTransition()

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CameraSetup : MonoBehaviour
 {
-    [SerializeField] float transitionTime = 2f;
+    float transitionTime = 2.5f;
     [SerializeField] GameObject arrowCanvas;
 
     void OnEnable()
