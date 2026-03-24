@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +12,10 @@ public class InventoryEntry : MonoBehaviour
     {
         displayImage.sprite = image;
         objectType = pickup;
-        GetComponentInChildren<TextMeshProUGUI>().text = "" + objectType;
+        string pickupName = "" + objectType;
+        pickupName = Regex.Replace(pickupName, "([A-Z])", "\n$1", RegexOptions.Compiled);
+
+        GetComponentInChildren<TextMeshProUGUI>().text = pickupName;
     }
     
     public void TryUse()

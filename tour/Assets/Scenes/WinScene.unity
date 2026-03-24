@@ -701,8 +701,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CONGRATULATIONS!!!!!!!!!!!!!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2ebeee24dead3fb4195e7adab2cb6440, type: 2}
+  m_sharedMaterial: {fileID: -8636528162985698250, guid: 2ebeee24dead3fb4195e7adab2cb6440, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
