@@ -4,7 +4,7 @@ public class Puzzle : MonoBehaviour
 {
     public PickupObject puzzleSolution;
     [SerializeField] bool isAdditive;
-    [SerializeField] GameObject puzzlePart;
+    [SerializeField] GameObject[] puzzlePart;
     [SerializeField] GameObject reward;
 
     void OnEnable()
@@ -21,13 +21,15 @@ public class Puzzle : MonoBehaviour
     {
         if (isAdditive)
         {
-            puzzlePart.SetActive(true);
+            foreach (GameObject obj in puzzlePart)
+                obj.SetActive(true);
         }
         else
         {
-            puzzlePart.SetActive(false);
+            foreach (GameObject obj in puzzlePart)
+                obj.SetActive(false);
         }
-        Invoke("SpawnReward", 1f);
+        if (reward != null) Invoke("SpawnReward", 0.5f);
     }
 
     void SpawnReward()

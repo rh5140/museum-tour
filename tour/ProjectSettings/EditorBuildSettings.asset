@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Ray_Functionality.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Qitao_Map.unity
     guid: 82908ddcfd7d14342a3c72574847423a
+  - enabled: 1
+    path: Assets/Scenes/Final_Map.unity
+    guid: fbd2805ac9c639342ac947a6bc615ea1
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: b218acb20a9007f4ea49b30c15846c7f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

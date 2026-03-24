@@ -4,13 +4,10 @@ using UnityEngine;
 public class RotaryLockButton : Interactable
 {
     [SerializeField] RotaryLock rotaryLock;
-    bool isTurning = false;
     float delay = 0.2f;
 
     public override void ReactToClick()
     {
-        if (isTurning) return;
-        isTurning = true;
         rotaryLock.TryUnlock();
         //StartCoroutine(WaitForTransition()); // Buggy because of game object setting inactive
     }
@@ -18,6 +15,5 @@ public class RotaryLockButton : Interactable
     IEnumerator WaitForTransition()
     {
         yield return new WaitForSecondsRealtime(delay);
-        isTurning = false;
     }
 }

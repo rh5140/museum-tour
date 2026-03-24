@@ -65,6 +65,7 @@ public class RotaryLock : MonoBehaviour
 
     public void TryUnlock()
     {
+        Debug.Log("TRY UNLOCK..");
         if (code1 == num1 && code2 == num2 && code3 == num3)
         {
             Open();
