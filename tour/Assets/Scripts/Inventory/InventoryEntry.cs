@@ -28,6 +28,7 @@ public class InventoryEntry : MonoBehaviour
             {
                 Debug.Log("Solved it!");
                 GameManager.instance.currentPuzzle.SolvePuzzle();
+                Destroy(gameObject);
             }
         }
     }
