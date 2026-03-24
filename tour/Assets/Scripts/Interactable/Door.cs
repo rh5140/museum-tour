@@ -23,6 +23,7 @@ public class Door : Interactable
             camera1.SetActive(true);
         }
         StartCoroutine(WaitForTransition());
+        Debug.Log(gameObject.name);
     }
     
     IEnumerator WaitForTransition()

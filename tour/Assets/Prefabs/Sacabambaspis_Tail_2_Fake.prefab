@@ -99,5 +99,27 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 29d42d9f18842944dbbe37718d3d51ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4042676986816995991}
   m_SourcePrefab: {fileID: 100100000, guid: 29d42d9f18842944dbbe37718d3d51ca, type: 3}
+--- !u!1 &4986124999647079956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 29d42d9f18842944dbbe37718d3d51ca, type: 3}
+  m_PrefabInstance: {fileID: 5328655100663927621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4042676986816995991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4986124999647079956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c52a4f0c92f99488359ed6d153c2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  image: {fileID: 21300000, guid: 0ba5dd27f6accc74a8e69b984c3fb2a0, type: 3}
+  objectType: 0

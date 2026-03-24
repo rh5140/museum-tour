@@ -3,11 +3,6 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    void Start()
-    {
-        Debug.Log("Started!");
-    }
-
     public void Interact(InputAction.CallbackContext context)
     {
         RaycastHit hit;
