@@ -4,8 +4,10 @@ public enum PickupObject
 {
     None,
     Screwdriver,
-    RightTail,
+    TruncateTail,
     Hammer,
     Key,
-    Pictograph
+    Pictograph,
+    ForkedTail,
+    ShavedTail
 }

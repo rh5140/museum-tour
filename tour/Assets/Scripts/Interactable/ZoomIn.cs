@@ -34,11 +34,11 @@ public class ZoomIn : Interactable
         isZoomed = !isZoomed;
         if (isZoomed)
         {
-            GameManager.instance.currentPuzzle = this;
+            //GameManager.instance.currentPuzzle = this;
         }
         else
         {
-            GameManager.instance.currentPuzzle = null;
+            //GameManager.instance.currentPuzzle = null;
         }
         StartCoroutine(WaitForTransition());
     }
